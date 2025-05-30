@@ -1,13 +1,13 @@
 # NASPy: Neural Associative Structure (Python Edition)
 
-**NASPy** is a minimal, hash-based memory framework designed to mimic how associative memory works — storing and reconstructing structured data using atomic units. Built in Python, NASPy provides the tools to build memory streams, deduplicate data, and serialize complex structures into verifiable, non-redundant records.
+**NASPy** is a minimal, hash-based memory framework designed to mimic how associative memory works, storing and reconstructing structured data using atomic units. Built in Python, NASPy provides the tools to build memory streams, deduplicate data, and serialize complex structures into verifiable, non-redundant records.
 
 ---
 
 ## 🧠 Core Concepts
 
 ### 🔹 `Datom`
-A "data atom" — the smallest unit of memory. Each `Datom` has:
+A "data atom," the smallest unit of memory. Each `Datom` has:
 - A data type (e.g., `text`, `int`, `symbol`)
 - A value (e.g., `"login"`, `42`)
 - A hash computed from the above
@@ -58,7 +58,7 @@ index = DatomIndex()
 stream = DataculeStream()
 scanner = Scanner(index)
 
-obj = {"user": "eduardo", "event": "login"}
+obj = {"user": "user", "event": "login"}
 datacule = scanner.observe(obj)
 stream.add_datacule(datacule)
 
